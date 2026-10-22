@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Excuse Desk · Thirteen Seconds</title>
+  <meta name="description" content="A Bills fan excuse generator, playoff-loss bingo, and a live count of days since Buffalo last played in a Super Bowl.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Martian+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Thirteen Seconds, home">
+      <span class="brand-clock">0:13</span>
+      <span class="brand-name">Thirteen<br>Seconds</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">The Collapse</a></li>
+        <li><a href="january.html">January Files</a></li>
+        <li><a href="tape.html">The Tape</a></li>
+        <li><a href="origin.html">Origin Story</a></li>
+        <li><a href="excuses.html" aria-current="page">Excuse Desk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <figure class="duo hero-photo"><img src="assets/img/buffalo-snow-2022.jpg" alt="" width="1600" height="960"></figure>
+    <div class="wrap">
+      <span class="eyebrow">Open every January · Walk-ins welcome</span>
+      <h1>Excuse <mark>desk.</mark></h1>
+      <p class="lede">For Bills fans who need something to say on Monday morning. Take an excuse, mark your bingo card, and check how long it's been.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="generator">
+        <span class="stamp">Officially approved</span>
+        <span class="eyebrow">Excuse generator · Issue No. 1</span>
+        <div>
+          <blockquote id="excuse">“It was the defense. Thirteen seconds is a defensive problem.”</blockquote>
+          <p class="source" id="excuse-source">— Overheard, every bar on Abbott Road</p>
+        </div>
+        <div class="meta-row">
+          <button class="btn" id="excuse-next" type="button">Issue another excuse</button>
+          <span class="count" id="excuse-count">1 excuse issued · playoff record unchanged</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow">Playoff loss bingo</span>
+            <h2>Mark your card</h2>
+            <p>Play along at the next postseason game. The center square is free, because it's always January. A few squares from a typical game are already marked.</p>
+          </div>
+          <button class="btn ghost" id="bingo-reset" type="button">Clear card</button>
+        </div>
+        <div>
+          <div class="bingo" id="bingo" role="group" aria-label="Bingo card"></div>
+          <p class="bingo-status" id="bingo-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Live count</span>
+        <h2>The drought</h2>
+        <p>Buffalo's last Super Bowl was Super Bowl XXVIII on January 30, 1994. They lost it. That was their fourth straight Super Bowl loss.</p>
+      </div>
+      <div class="drought">
+        <div><span class="num" id="drought-days">—</span><span class="label">Days since a Bills Super Bowl</span></div>
+        <div><span class="num" id="drought-years">—</span><span class="label">Years and counting</span></div>
+        <div><span class="num">7</span><span class="label">Postseasons with Allen</span></div>
+        <div><span class="num">0</span><span class="label">Super Bowls with Allen</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="big">Seven Januaries. Zero rings.</div>
+      <p>A satire site by a fan who has watched too much Bills football. It's about Sundays, not the man. Stats are from public game records through the 2025 season. Photos come from Wikimedia Commons under their stated licenses.</p>
+    </div>
+    <ul>
+      <li><a href="index.html">The Collapse</a></li>
+      <li><a href="january.html">January Files</a></li>
+      <li><a href="tape.html">The Tape</a></li>
+      <li><a href="origin.html">Origin Story</a></li>
+      <li><a href="credits.html">Photo credits &amp; sources</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
